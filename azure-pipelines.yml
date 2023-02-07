@@ -74,8 +74,8 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'meffius'
-    repository: 'unyleya_projeto_cicd_matheus'
-    command: 'push'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 
  
 
