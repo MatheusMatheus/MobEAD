@@ -1,4 +1,13 @@
 # ASP.NET Core (.NET Framework)
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Pago pelo Uso(6db0ad80-ab41-4f6a-8396-95bbf1d2d6bb)'
+    appType: 'webAppHyperVContainer'
+    WebAppName: 'unyleya-matheus'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'example-resources'
+    SlotName: 'production'
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
